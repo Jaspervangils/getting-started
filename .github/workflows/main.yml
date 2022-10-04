@@ -69,8 +69,8 @@ jobs:
             location: 'west europe' 
  
             ports: '3000' 
-            azure-file-volume-account-key: 'Kd2hLhM1k9YBldJVUnd+mUv7amr7z8o3KMSJZCBQLTW2HqgxZf3Gk46bGMVuavMu+dBsPukauVMS+AStQt9UUQ=='
-            azure-file-volume-account-name: 'sajasper'
-            azure-file-volume-mount-path: '/etc/todos/'
-            azure-file-volume-share-name: 'testshare'
+            azure-file-volume-account-key: ${{ secrets.VOLUME_KEY }}
+            azure-file-volume-account-name: ${{ secrets.VOLUME_NAME }}
+            azure-file-volume-mount-path: ${{ secrets.VOLUME_PATH }}
+            azure-file-volume-share-name: ${{ secrets.VOLUME_SHARE }}
 
